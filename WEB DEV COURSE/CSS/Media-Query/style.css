@@ -1,0 +1,68 @@
+/* .Naviagtion, ul, li
+{
+    float: right;
+    display: flex;
+    align-items: center;
+    padding: 6px 53px 6px 9px;
+}
+.header
+{
+    background-color: aquamarine;
+}
+
+.logo img
+{
+    width: 30px;
+    border-radius: 30px;
+}
+ */
+
+ *{
+    padding: 0px;
+    margin: 0px;
+ }
+ header{
+    float: left;
+    min-height: 60px;
+    height: auto;
+    width: 100%;
+    background-color: bisque;
+ }
+ .header{
+    width: 1170px;
+    margin: 0px auto;
+ }
+ .logo{
+    float: left;
+    width: 200px;
+ }
+ .logo img{
+    float: left;
+    width: 50px;
+    border-radius: 30px;
+    padding: 4px;
+ }
+ .nav{
+    float: right;
+    width: 550px;
+ }
+ .nav ul{
+    float: left;
+    width: 100%;
+ }
+ .nav ul li{
+    float: left;
+    display: inline;
+ }
+ .nav ul li a{
+    float: left;
+    text-decoration: none;
+    color: black;
+    margin: 5px 11px;
+    padding: 16px 29px;
+    /* background-color: white; */
+ }
+ a.active , a:hover{
+    background-color: black;
+    color: white !important;
+ }

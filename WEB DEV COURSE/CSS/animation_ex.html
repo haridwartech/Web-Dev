@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+        .progress
+        {
+            background-color: red;
+            height: 3px;
+            animation: load 2s ease-in-out;
+        }
+        header
+        {
+            height: 122px;
+            background-color: black;
+        }
+
+        main{
+            height: 899px;
+            background-color: blueviolet;
+        }
+        .slider img
+        {
+            display: block;
+            margin: auto;
+        }
+        .slider
+        {
+            background-color: white;
+            height: 523px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .img1
+        {
+            height: 600px;
+            width: 600px;
+            transform: translate(-8vw);
+            animation: slide1 1s 2s forwards;
+        }
+        .img2
+        {
+            height: 600px;
+            width: 600px;
+            transform: translate(0vw);
+            animation: slide2 1s 2s forwards;
+        }
+        .img3
+        {
+            height: 600px;
+            width: 600px;
+            transform: translate(8vw);
+        }
+        @keyframes load 
+        {
+            0%
+            {
+                width: 0;
+            }
+            25%
+            {
+                width: 30vw;
+            }
+            50%
+            {
+                width: 70vw;
+            }
+            100%
+            {
+                width: 100vw;
+            }
+        }
+        @keyframes rotate
+        {
+            0%
+            {
+                transform: rotate(0deg);
+            }
+            100%
+            {
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes slide1
+        {
+            0%
+            {
+                transform: translate(-8vw);
+            }
+            100%
+            {
+                transform: translate(85vw);
+            }
+        }
+        @keyframes slide2
+        {
+            0%
+            {
+                transform: translate(0vw);
+            }
+            100%
+            {
+                transform: translate(92vw);
+            }
+        }
+        /* @keyframes slide3
+        {
+            0%
+            {
+                transform: translate(-8vw);
+            }
+            100%
+            {
+                transform: translate(92vw);
+            }
+        } */
+    </style>
+</head>
+<body>
+        <div class="progress"></div>
+        <header></header>
+        <main>
+            <div class="silder">
+                <img src="img1.jpg"alt="Error" class="img1">
+                <img src="img2.jpg" alt="Error" class="img2">
+                <img src="img3.jpg" alt="Error" class="img3">
+            </div>      
+        </main>
+</body>
+</html>

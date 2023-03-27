@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tranform and Transition</title>
+    <style>
+        .container
+        {
+            background-color: aquamarine;
+            height: 350px;
+        }
+        .box
+        {
+            border: 2px solid black;
+            display: inline-block;
+            /* transform: translate(120px, 130px) rotate(45deg); */
+            /* transform-origin: 0; */
+            /* transform: scale(2,1); */
+            /* transform: scaleX(2); */
+            /* transform: scaleY(2); */
+            /* transform: skew(25deg, 30deg); */
+        }
+        img
+        {
+            width: 186px;
+            height: 150px;
+            /* transition-property: width;
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 1s; */
+            transition: width 1s ease-in-out, height 5s ease-in;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img id = "myImage" src="https://images.unsplash.com/photo-1564910443496-5fd2d76b47fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80" alt="Image loading Error">
+            <button id="btn">Toggle</button>
+        </div>
+    </div>
+</body>
+<script>
+    myImage.style.width= '350px' ;
+    myImage.style.height= '100px' ;
+
+    btn.addEventListener("click", ()=>
+    {
+        myImage.style.height = '360px';
+        if(myImage.style.width=== '501px')
+        {
+            myImage.style.width = "100px";
+        }
+        else if(myImage.style.width==='500px')
+        {
+            myImage.style.width = "250px" ;
+        }
+    })
+</script>
+</html>

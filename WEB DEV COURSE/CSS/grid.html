@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container
+        {
+            display: grid;
+            background-color: yellowgreen;
+            height: 66vh;
+            /* grid-row-gap: 10px;
+            grid-column-gap: 12px; */
+
+            /* grid-gap: 12px 12px; */
+            grid-gap: 12px;
+            
+            /* grid-template-columns: 35px 335px auto; */
+            /* grid-template-rows: 45px 100px 1000px; */
+            grid-template-columns: auto auto auto auto;
+
+
+        }
+        .item
+        {
+            background-color: aqua;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Box1</div>
+        <div class="item">Box2</div>
+        <div class="item">Box3</div>
+        <div class="item">Box4</div>
+        <div class="item">Box5</div>
+        <div class="item">Box6</div>
+        <div class="item">Box7</div>
+        <div class="item">Box8</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header
+{
+    /* position: fixed; */
+    margin: 13px 0px;
+    padding: 29px;
+    display: flex;
+    background-color: blue;
+    color: white;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    /* z-index: 100; */
+    height: 70px;
+}
+
+header .navbar 
+{
+    display: flex;
+    font-weight: 500;
+}
+header .navbar p i
+{
+    margin: 5px;
+    
+}
+
+.navbar p
+{
+    margin-right: 30px;
+}
+
+header .social-icon button 
+{
+    align-items: center;
+    font-size: 30px;
+    margin: 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    height: 20px;
+}
+header .social-icon button i{
+    color: white;
+}

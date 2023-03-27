@@ -1,0 +1,161 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: white;
+}
+
+.container
+{
+    position: relative;
+    max-width: 1200px;
+    width: 100%;
+    background: yellowgreen;
+    padding: 40px;
+}
+
+.container .box
+{
+    padding: 50px 30px;
+}
+
+.image img
+{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    opacity: 0.8;
+    border: 3px solid white;
+}
+
+.card
+{
+    width: 350px;
+    height: 350px;
+    background: transparent;
+    box-shadow: 
+    inset 20px 20px 20px rgba(0, 0, 0, .09),
+    5px 25px 20px rgba(0,0,0, 0.05),
+    5px 20px 30px rgba(0,0,0, 0.05),
+    inset -20px -20px 25px rgba(255,255,255, 0.9);
+    border-radius: 64% 36% 51% 49% / 46% 54% 46% 54% ;
+    transition: .5s ease-in-out;
+}
+
+.card:hover
+{
+    border-radius: 50%;
+}
+
+.card::before
+{
+    /* border: 2px solid black; */
+    content: '';
+    position: absolute;
+    top: 150px;
+    left: 470px;
+    width: 35px;
+    height: 35px;
+    background: #fff;
+    border-radius: 50%;
+    opacity: .9;
+}
+
+.card::after
+{
+    content: '';
+    position: absolute;
+    top: 190px;
+    left: 491px;
+    width: 15px;
+    height: 15px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    opacity: .9;
+}
+
+.card .card-content
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.card-content .name-profession
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    color: black;
+}
+
+.name-profession .name
+{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.name-profession .name-profession
+{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.card-content .rating
+{
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+}
+
+.card-content .rating i
+{
+    font-size: 22px;
+    color: var(--clr);
+    margin: 0 2px;
+    opacity: .8;
+}
+
+.card-content button
+{
+    position: relative;
+    padding: 8px 35px;
+    background-color: var(--clr);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 2px 2px rgba(0,0,0,.25);
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    opacity: .8;
+    margin-top: 30px;
+}
+
+.card-content button::before
+{
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 55%;
+    height: 5px;
+    background: rgba(255, 255, 255, .5);
+    border-radius: 5px;
+}
